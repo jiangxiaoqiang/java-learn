@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Start-Class: com.dolphin.gateway.GatewayApplication
+Main-Class: org.springframework.boot.loader.JarLauncher
+Spring-Boot-Version: 2.3.10.RELEASE
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+Spring-Boot-Classpath-Index: BOOT-INF/classpath.idx
+

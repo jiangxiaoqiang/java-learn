@@ -1,0 +1,41 @@
+ext {
+    java = [
+            compileSdkVersion: 1.8,
+            minSdkVersion    : 1.8,
+            targetSdkVersion : 1.8,
+            versionCode      : 1.8,
+    ]
+
+    version = [
+            mybatisGeneratorCoreVersion       : '1.3.7',
+            itfswMybatisGeneratorPluginVersion: '1.3.8',
+            springBootVersion                 : '2.3.10.RELEASE',
+            apolloClientVersion               : '1.8.0',
+            springCloudVersion                : 'Hoxton.SR11',
+            fastjsonVersion                   : '1.2.57',
+            log4jVersion                      : '2.14.1'
+
+    ]
+
+    dependencies = [
+            "mybatisGeneratorCore"       : "org.mybatis.generator:mybatis-generator-core:${version["mybatisGeneratorCoreVersion"]}",
+            "itfswMybatisGeneratorPlugin": "com.itfsw:mybatis-generator-plugin:${version["itfswMybatisGeneratorPluginVersion"]}",
+            "log4j"                      : "org.apache.logging.log4j:log4j-core:${version["log4jVersion"]}",
+            "collections4"               : "org.apache.commons:commons-collections4:4.4",
+            "slfj2Log4j"                 : "org.apache.logging.log4j:log4j-slf4j-impl:${version["log4jVersion"]}"
+    ]
+
+    redisClientVersion = '3.0.1'
+    lombokVersion = '1.18.20'
+    springfoxSwaagger2Version = '2.9.2'
+    springfoxSwaggerUIVersion = '2.7.0'
+    commonColleciton3Version = '3.9'
+    commonColleciton4Version = '4.4'
+    commonHttpclientVersion = '3.1'
+    kryoVersion = '4.0.2'
+    rxjavaVersion = '2.2.10'
+    scalaBinaryVersion = '2.11'
+}
+
+
+

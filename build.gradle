@@ -1,0 +1,160 @@
+buildscript {
+    apply from: "${rootProject.projectDir}/common.gradle"
+
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        /**
+         * classpath指定gradle工具需要使用的依赖（buildscript itself needs something to run, use classpath）
+         * api和implementation指定项目需要的依赖（ project needs something to run, use compile）
+         */
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.11.RELEASE"
+        classpath "gradle.plugin.com.arenagod.gradle:mybatis-generator-plugin:1.4"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'java-library'
+    id 'application'
+    id "org.springframework.boot" version "2.3.10.RELEASE"
+    id "io.freefair.lombok" version "4.1.6"
+    id 'com.github.ayltai.spring-graalvm-native-plugin' version '1.4.10'
+}
+
+apply from: "${rootProject.projectDir}/common.gradle"
+
+subprojects {
+    apply plugin: 'io.freefair.lombok'
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+    apply plugin: 'java-library'
+    apply plugin: "idea"
+    apply plugin: "io.spring.dependency-management"
+    apply plugin: 'org.springframework.boot'
+
+    configurations.all {
+        exclude group: "ch.qos.logback", module: "logback-classic"
+        exclude group: "ch.qos.logback", module: "logback-core"
+        exclude group: "org.apache.logging.log4j", module: "log4j-to-slf4j"
+
+        // check for updates every build
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+
+        // check for updates every build
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+
+        /**
+         * 强制设置redis.clients使用3.0.1版本
+         * 低版本缺少必须的类
+         */
+        resolutionStrategy {
+            eachDependency { DependencyResolveDetails details ->
+                /*if (details.requested.group == 'org.springframework.data') {
+                    details.useVersion "2.5.0"
+                }*/
+                if (details.requested.group == 'redis.clients') {
+                    details.useVersion "3.6.0"
+                }
+                if (details.requested.group == 'com.github.jsqlparser') {
+                    details.useVersion "2.1"
+                }
+                if (details.requested.group == 'org.springframework.data' && details.requested.name == 'spring-data-redis' ) {
+                    /**
+                     * 强制使用2.5.0版本的
+                     *
+                     */
+                    details.useVersion("2.5.0")
+                }
+                if (details.requested.group == 'org.postgresql' && details.requested.name == 'postgresql' ) {
+                    details.useVersion("42.2.23")
+                }
+            }
+        }
+    }
+
+    repositories {
+        if (project.hasProperty("buildEnv") && project.getProperties().get("buildEnv") == "github") {
+            mavenCentral()
+        } else {
+            mavenCentral()
+        }
+    }
+
+    dependencies {
+        compileOnly "org.projectlombok:lombok:${lombokVersion}"
+        annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+        testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+        testImplementation "org.projectlombok:lombok:${lombokVersion}"
+        api "$rootProject.ext.dependencies.log4j"
+        api "$rootProject.ext.dependencies.slfj2Log4j"
+        api "$rootProject.ext.dependencies.collections4"
+        api "org.apache.commons:commons-lang3:${commonColleciton3Version}"
+        //api "org.slf4j:slf4j-nop:2.14.1"
+        /**
+         * 代码自动生成
+         */
+        implementation "$rootProject.ext.dependencies.mybatisGeneratorCore"
+        implementation "$rootProject.ext.dependencies.itfswMybatisGeneratorPlugin"
+        testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:$rootProject.ext.version.springCloudVersion"
+        }
+    }
+}
+
+allprojects {
+
+    sourceCompatibility = 11
+    targetCompatibility = 11
+
+    def defaultEncoding = 'UTF-8'
+
+    compileJava {
+        options.encoding = defaultEncoding
+    }
+    compileTestJava {
+        options.encoding = defaultEncoding
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    /**
+     * remove aliyun repo config from ~/.gradle/init.gradle into project
+     * avoid to force other project in machine use aliyun
+     * some international project could not fetch dependencies from aliyun
+     */
+    repositories {
+        def PROXY_REPOSITORY_URL = 'https://maven.aliyun.com/nexus/content/groups/public'
+        all { ArtifactRepository repo ->
+            if(repo instanceof MavenArtifactRepository){
+                def url = repo.url.toString()
+                if (url.startsWith('https://repo1.maven.org/maven2')) {
+                    project.logger.lifecycle "Repository ${repo.url} replaced by $PROXY_REPOSITORY_URL."
+                    remove repo
+                }
+            }
+        }
+        maven {
+            url PROXY_REPOSITORY_URL
+        }
+    }
+}
+
+task printProps {
+    project.properties['org.gradle.java.home']
+    project.properties['org.gradle.jvmargs']
+}
+
+
+
+

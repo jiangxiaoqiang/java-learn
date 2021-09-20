@@ -1,0 +1,3 @@
+
+
+Spring-Cloud-Gateway与Zuul 1.0相比，前者基于WebFlux与Reactive线程模型的异步非阻塞框架，服务通过底层的Netty来进行发布及运行，异步非阻塞可以有效降低系统的线程数量，只需要很少的线程就可以完成较高的并发支持，而Zuul1.0是基于servlet性能上的差距可想而知，同时Spring-Cloud-Gateway还内置了许多的路由断言(Factories)与过滤器(Filter)可以减少开发人员的编码，和更好的功能支持和扩展。

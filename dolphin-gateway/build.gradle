@@ -1,0 +1,14 @@
+project(":dolphin-gateway") {
+    archivesBaseName = "dolphin-gateway"
+    version = "1.0.0-SNAPSHOT"
+    bootJar {
+        manifest {
+            attributes 'Start-Class': 'com.dolphin.gateway.GatewayApplication'
+        }
+    }
+
+    dependencies {
+        implementation "org.springframework.boot:spring-boot-starter-webflux"
+        implementation "org.springframework.cloud:spring-cloud-starter-gateway"
+    }
+}
