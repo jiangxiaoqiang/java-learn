@@ -8,17 +8,15 @@ com/dolphin/gateway/filter/RequestLogGatewayFilterFactory.java
 com/dolphin/gateway/filter/MyFilterFactory.java
  com.dolphin.gateway.filter.MyFilterFactory
  com.dolphin.gateway.filter.MyFilterFactory$Config
-com/dolphin/gateway/filter/JwtAuthenticationFilter.java
- com.dolphin.gateway.filter.JwtAuthenticationFilter
+com/dolphin/gateway/filter/DemoGatewayFilter.java
+ com.dolphin.gateway.filter.DemoGatewayFilter
 com/dolphin/gateway/filter/CustomAddRequestHeaderGatewayFilterFactory.java
  com.dolphin.gateway.filter.CustomAddRequestHeaderGatewayFilterFactory
  com.dolphin.gateway.filter.CustomAddRequestHeaderGatewayFilterFactory$CustomAddRequestHeaderConfig
 com/dolphin/gateway/filter/AuthorizeGatewayFilterFactory.java
  com.dolphin.gateway.filter.AuthorizeGatewayFilterFactory
  com.dolphin.gateway.filter.AuthorizeGatewayFilterFactory$Config
-com/dolphin/gateway/config/GatewayConfig.java
- com.dolphin.gateway.config.GatewayConfig
-com/dolphin/gateway/filter/DemoGatewayFilter.java
- com.dolphin.gateway.filter.DemoGatewayFilter
+com/dolphin/gateway/filter/JwtAuthenticationFilter.java
+ com.dolphin.gateway.filter.JwtAuthenticationFilter
 com/dolphin/gateway/GatewayApplication.java
  com.dolphin.gateway.GatewayApplication
