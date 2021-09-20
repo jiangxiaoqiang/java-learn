@@ -8,12 +8,22 @@ import org.springframework.stereotype.Component;
  * @author dolphin
  */
 @Component
-public class LogFilter2 extends AbstractGatewayFilterFactory {
+public class DemoGatewayFilter extends AbstractGatewayFilterFactory {
+
     @Override
     public GatewayFilter apply(Object config) {
-        return (exchange,chain) -> {
-            System.out.println("LogFilter2 flitered!!!");
+        return (exchange, chain) -> {
             return chain.filter(exchange);
         };
+/*
+it works too
+       return new GatewayFilter() {
+           @Override
+           public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+               return chain.filter(exchange);
+           }
+       }
+*/
     }
+
 }
