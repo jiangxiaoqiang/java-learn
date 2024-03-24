@@ -23,3 +23,7 @@
 hs_err_pid*
 
 dolphin-gateway/build
+.idea
+.DS_Store
+*.iml
+.gradle

@@ -1,0 +1,15 @@
+project(":dolphin-feign-client") {
+    archivesBaseName = "dolphin-feign-client"
+    version = "1.0.0-SNAPSHOT"
+    bootJar {
+        manifest {
+            attributes 'Start-Class': 'com.dolphin.gateway.GatewayApplication'
+        }
+    }
+
+    dependencies {
+        implementation group: 'com.alibaba', name: 'fastjson', version: '1.1.25'
+        api "org.springframework.boot:spring-boot-starter-web"
+
+    }
+}

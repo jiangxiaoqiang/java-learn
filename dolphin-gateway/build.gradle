@@ -10,5 +10,7 @@ project(":dolphin-gateway") {
     dependencies {
         implementation "org.springframework.boot:spring-boot-starter-webflux"
         implementation "org.springframework.cloud:spring-cloud-starter-gateway"
+        implementation group: 'com.alibaba', name: 'fastjson', version: '1.1.25'
+        api "org.springframework.boot:spring-boot-starter-web"
     }
 }

@@ -21,9 +21,8 @@ plugins {
     id 'idea'
     id 'java-library'
     id 'application'
-    id "org.springframework.boot" version "2.3.10.RELEASE"
+    id "org.springframework.boot" version "3.2.4"
     id "io.freefair.lombok" version "4.1.6"
-    id 'com.github.ayltai.spring-graalvm-native-plugin' version '1.4.10'
 }
 
 apply from: "${rootProject.projectDir}/common.gradle"
@@ -100,6 +99,7 @@ subprojects {
          */
         implementation "$rootProject.ext.dependencies.mybatisGeneratorCore"
         implementation "$rootProject.ext.dependencies.itfswMybatisGeneratorPlugin"
+        api "org.springdoc:springdoc-openapi-ui:1.6.9"
         testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
     }
 
@@ -112,8 +112,8 @@ subprojects {
 
 allprojects {
 
-    sourceCompatibility = 11
-    targetCompatibility = 11
+    sourceCompatibility = 21
+    targetCompatibility = 21
 
     def defaultEncoding = 'UTF-8'
 
