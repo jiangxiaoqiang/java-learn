@@ -5,52 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae8be433-acc9-4bc2-8115-effdbd8907ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/dolphin-feign-client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-feign-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-feign-service/dolphin-feign-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/SpringLearn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/algorithms/BinaryMirrorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/algorithms/BinaryTreeMirror.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/algorithms/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/openapi/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/src/main/java/com/dolphin/client/FeignExceptionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/src/main/java/com/dolphin/client/FeignFaildResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/src/main/java/com/dolphin/client/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/src/main/java/com/dolphin/client/api/FeignTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign-client/src/main/java/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign/dolphin-feign-api/src/main/java/com/dolphin/api/ITestServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign/dolphin-feign-api/src/main/java/com/dolphin/api/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign/dolphin-feign-service/src/main/java/com/dolphin/server/FeignServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign/dolphin-feign-service/src/main/java/com/dolphin/server/api/FeignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign/dolphin-feign-service/src/main/java/com/dolphin/server/api/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-feign/dolphin-feign-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/test/java/BaseClas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/test/java/DemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/test/java/SubClas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-gateway/src/test/java/YourExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/AES.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/FeignFaildResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/IpConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/OOMTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/SnowflakeTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/UniqueOrderGenerate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/Verify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dolphin-common-biz/lombok.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dolphin-feign-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dolphin-feign-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dolphin-feign-client/dolphin-feign-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dolphin-feign-client/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dolphin-feign-client/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dolphin-feign-client/src/main/java/com/dolphin/client/FeignClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dolphin-feign-client/src/main/java/com/dolphin/client/FeignClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dolphin-feign-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dolphin-feign-service/dolphin-feign-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dolphin-feign-service/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dolphin-gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dolphin-gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dolphin-gateway/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dolphin-gateway/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +77,15 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="retire" type="f1a62948:ProjectNode" />
+                <item name="java-learn" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -82,6 +97,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -89,6 +105,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jiangxiaoqiang&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -97,6 +119,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jiangxiaoqiang/java-learn.git&quot;,
+    &quot;accountId&quot;: &quot;6d48fb3d-99b7-4c6a-94e7-c25bc86c9223&quot;
+  }
+}</component>
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
   </component>
@@ -109,9 +137,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="1yOWKTwBcGhZ4ZUljuPPF6FIEdk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -120,18 +148,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.FeignClientApplication (2).executor": "Debug",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build java-learn.executor": "Run",
+    "Gradle.DemoTest.addition.executor": "Debug",
+    "Gradle.DemoTest.executor": "Debug",
+    "Gradle.java-learn:dolphin-feign-client [:dolphin-feign-client:FeignClientApplication.main()].executor": "Debug",
+    "Gradle.java-learn:dolphin-feign-client [:dolphin-feign-client:com.dolphin.client.FeignClientApplication.main()].executor": "Debug",
+    "Gradle.java-learn:dolphin-feign-service [:dolphin-feign-service:FeignServerApplication.main()].executor": "Debug",
+    "Gradle.java-learn:dolphin-feign:dolphin-feign-service [:dolphin-feign:dolphin-feign-service:com.dolphin.server.FeignServerApplication.main()].executor": "Debug",
+    "Gradle.java-learn:dolphin-mybatis-plus [:dolphin-mybatis-plus:FeignClientApplication.main()].executor": "Debug",
+    "Gradle.java-learn:dolphin-mybatis-plus [:dolphin-mybatis-plus:OOMTest.main()].executor": "Debug",
+    "Gradle.java-learn:dolphin-mybatis-plus [:dolphin-mybatis-plus:SnowflakeTestApplication.main()].executor": "Run",
+    "Gradle.java-learn:dolphin-mybatis-plus [:dolphin-mybatis-plus:Verify.main()].executor": "Debug",
+    "Gradle.java-learn:dolphin-mybatis-plus [:dolphin-mybatis-plus:Worker.main()].executor": "Debug",
+    "JUnit.FeignClientApplication.test.executor": "Debug",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "azul-11",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/xiaoqiangjiang/source/dolphin/java-learn/gradle/wrapper",
+    "last_opened_file_path": "/Users/xiaoqiangjiang/source/dolphin/java-learn",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "babbf789f19f8889ab2632cdfa20ebd2"
   }
 }]]></component>
@@ -140,16 +187,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/gradle/wrapper" />
+      <recent name="$PROJECT_DIR$/dolphin-mybatis-plus" />
+      <recent name="$PROJECT_DIR$/dolphin-feign" />
+      <recent name="$PROJECT_DIR$/dolphin-feign-client/src/main/java" />
+      <recent name="$PROJECT_DIR$/dolphin-feign-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/dolphin-feign-client" />
-      <recent name="$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dolphin-feign" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.dolphin.api" />
+      <recent name="com.dolphin.server.api" />
+      <recent name="main.java.com.dolphin.server" />
       <recent name="com.dolphin.gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BinaryMirrorTest">
+  <component name="RunManager" selected="Gradle.DemoTest">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -180,12 +235,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryMirrorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dolphin.gateway.algorithms.BinaryMirrorTest" />
-      <module name="retire.dolphin-gateway.main" />
+    <configuration name="FeignClientApplication (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dolphin.client.FeignClientApplication" />
+      <module name="java-learn.dolphin-feign-client.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dolphin.gateway.algorithms.*" />
+          <option name="PATTERN" value="com.dolphin.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,12 +248,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dolphin.gateway.Demo" />
-      <module name="retire.dolphin-gateway.main" />
+    <configuration name="FeignServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dolphin.server.FeignServerApplication" />
+      <module name="java-learn.dolphin-feign.dolphin-feign-service.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dolphin.gateway.*" />
+          <option name="PATTERN" value="com.dolphin.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,11 +261,94 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="java-learn" />
+    <configuration name="OOMTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dolphin.client.OOMTest" />
+      <module name="retire.dolphin-mybatis-plus.main" />
+      <option name="VM_PARAMETERS" value="-Xms20m -Xms20m -XX:HeapDumpOnOutOfMemoryError -Xx:HeapDumpPath=$USER_HOME$/" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dolphin.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="SnowflakeTestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dolphin.client.SnowflakeTestApplication" />
+      <module name="retire.dolphin-mybatis-plus.main" />
+      <option name="PROGRAM_PARAMETERS" value="-Xms20m -Xms20m -XX:HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$USER_HOME$/dump/" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dolphin.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnowflakeTestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dolphin.client.SnowflakeTestApplication" />
+      <module name="retire.dolphin-mybatis-plus.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dolphin.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":dolphin-gateway:test" />
+            <option value="--tests" />
+            <option value="&quot;DemoTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoTest.addition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":dolphin-gateway:test" />
+            <option value="--tests" />
+            <option value="&quot;DemoTest.addition&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="java-learn" />
@@ -226,20 +364,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.SnowflakeTestApplication" />
+      <item itemvalue="Application.FeignClientApplication (2)" />
+      <item itemvalue="Application.FeignServerApplication" />
+      <item itemvalue="Application.OOMTest" />
+      <item itemvalue="Gradle.DemoTest" />
+      <item itemvalue="Gradle.DemoTest.addition" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BinaryMirrorTest" />
-        <item itemvalue="Application.Demo" />
+        <item itemvalue="Gradle.DemoTest" />
+        <item itemvalue="Gradle.DemoTest.addition" />
+        <item itemvalue="Application.FeignServerApplication" />
+        <item itemvalue="Application.FeignClientApplication (2)" />
+        <item itemvalue="Application.OOMTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-f644763e9732-56b8144a" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -278,18 +419,50 @@
       </map>
     </option>
   </component>
-  <component name="WfRunsListSearchHistory"><![CDATA[{
-  "history": [
+  <component name="WfRunsListSearchHistory">{
+  &quot;history&quot;: [
     {
-      "branch": "main",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;main&quot;,
+      &quot;currentBranchFilter&quot;: true
     }
   ],
-  "lastFilter": {
-    "branch": "main",
-    "currentBranchFilter": true
+  &quot;lastFilter&quot;: {
+    &quot;branch&quot;: &quot;main&quot;,
+    &quot;currentBranchFilter&quot;: true
   }
-}]]></component>
+}</component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -302,6 +475,46 @@
           <url>file://$PROJECT_DIR$/dolphin-gateway/src/main/java/com/dolphin/gateway/filter/JwtAuthenticationFilter.java</url>
           <line>41</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dolphin-feign-client/src/main/java/com/dolphin/client/FeignExceptionConfiguration.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dolphin-feign/dolphin-feign-service/src/main/java/com/dolphin/server/FeignServerApplication.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dolphin-feign-client/src/main/java/com/dolphin/client/api/FeignTestController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dolphin-mybatis-plus/src/main/java/com/dolphin/client/Verify.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dolphin-gateway/src/test/java/DemoTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dolphin-gateway/src/test/java/DemoTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dolphin-gateway/src/test/java/DemoTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dolphin-gateway/src/test/java/YourExtension.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

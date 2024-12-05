@@ -1,0 +1,26 @@
+project(":dolphin-feign") {
+    dependencies {
+    }
+}
+
+project(":dolphin-feign:dolphin-feign-api") {
+    dependencies {
+
+    }
+}
+
+project(":dolphin-feign:dolphin-feign-service") {
+    archivesBaseName = "dolphin-feign-service"
+    version = "1.0.0-SNAPSHOT"
+    bootJar {
+        manifest {
+            attributes 'Start-Class': 'com.dolphin.server.FeignServerApplication'
+        }
+    }
+
+    dependencies {
+        implementation "org.springframework.boot:spring-boot-starter-web"
+        implementation "org.springframework.cloud:spring-cloud-starter-openfeign"
+        api project(":dolphin-feign:dolphin-feign-api")
+    }
+}

@@ -22,13 +22,11 @@ plugins {
     id 'java-library'
     id 'application'
     id "org.springframework.boot" version "3.2.4"
-    id "io.freefair.lombok" version "4.1.6"
 }
 
 apply from: "${rootProject.projectDir}/common.gradle"
 
 subprojects {
-    apply plugin: 'io.freefair.lombok'
     apply plugin: 'java'
     apply plugin: 'maven-publish'
     apply plugin: 'java-library'
@@ -39,7 +37,6 @@ subprojects {
     configurations.all {
         exclude group: "ch.qos.logback", module: "logback-classic"
         exclude group: "ch.qos.logback", module: "logback-core"
-        exclude group: "org.apache.logging.log4j", module: "log4j-to-slf4j"
 
         // check for updates every build
         resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
@@ -89,11 +86,8 @@ subprojects {
         annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
         testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
         testImplementation "org.projectlombok:lombok:${lombokVersion}"
-        api "$rootProject.ext.dependencies.log4j"
-        api "$rootProject.ext.dependencies.slfj2Log4j"
         api "$rootProject.ext.dependencies.collections4"
         api "org.apache.commons:commons-lang3:${commonColleciton3Version}"
-        //api "org.slf4j:slf4j-nop:2.14.1"
         /**
          * 代码自动生成
          */
@@ -101,6 +95,8 @@ subprojects {
         implementation "$rootProject.ext.dependencies.itfswMybatisGeneratorPlugin"
         api "org.springdoc:springdoc-openapi-ui:1.6.9"
         testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+        api 'com.alipay.sdk:alipay-sdk-java:4.35.65.ALL'
+        api "junit:junit:4.13.1"
     }
 
     dependencyManagement {

@@ -4,12 +4,17 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/dolphin-feign" />
+            <option value="$PROJECT_DIR$/dolphin-feign-client" />
+            <option value="$PROJECT_DIR$/dolphin-feign-service" />
+            <option value="$PROJECT_DIR$/dolphin-feign/dolphin-feign-api" />
+            <option value="$PROJECT_DIR$/dolphin-feign/dolphin-feign-service" />
             <option value="$PROJECT_DIR$/dolphin-gateway" />
+            <option value="$PROJECT_DIR$/dolphin-mybatis-plus" />
           </set>
         </option>
       </GradleProjectSettings>

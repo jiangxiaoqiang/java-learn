@@ -1,15 +1,19 @@
-package main.java.com.dolphin.client;
+package com.dolphin.client;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(exclude = {
 
+},scanBasePackages = {
+        "com.dolphin.server.api"
 })
 public class FeignClientApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringLearn.class, args);
-    }
-
-    @Bean
-    public RequestTimeGatewayFilterFactory elapsedGatewayFilterFactory() {
-        return new RequestTimeGatewayFilterFactory();
+        try {
+            SpringApplication.run(FeignClientApplication.class, args);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,4 +1,11 @@
-rootProject.name = 'retire'
+rootProject.name = 'java-learn'
 
 include ":dolphin-gateway"
+include ":dolphin-feign-client"
+include ":dolphin-feign-service"
+include ":dolphin-mybatis-plus"
+
+include ":dolphin-feign"
+include ":dolphin-feign:dolphin-feign-api"
+include ":dolphin-feign:dolphin-feign-service"
 

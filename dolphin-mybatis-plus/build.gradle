@@ -1,0 +1,18 @@
+project(":dolphin-feign-client") {
+    archivesBaseName = "dolphin-feign-client"
+    version = "1.0.0-SNAPSHOT"
+    bootJar {
+        manifest {
+            attributes 'Start-Class': 'com.dolphin.client.FeignClientApplication'
+        }
+    }
+
+    dependencies {
+        implementation group: 'com.alibaba', name: 'fastjson', version: '1.1.25'
+        api "org.springframework.boot:spring-boot-starter-web"
+        api 'com.alipay.sdk:alipay-sdk-java:4.35.65.ALL'
+        api "junit:junit:4.13.1"
+        implementation "org.springframework.cloud:spring-cloud-starter-openfeign"
+        implementation project(":dolphin-feign-service")
+    }
+}
